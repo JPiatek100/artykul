@@ -120,7 +120,7 @@ function showNextBtn(page) {
     hiddenPage();
     nextQuestion();
   });
-  element.textContent = "next";
+  element.textContent = "naprzód";
   page.appendChild(element);
 }
 function showFinalPage() {
@@ -128,10 +128,10 @@ function showFinalPage() {
   page.className = "page";
   page.innerHTML = `
     <h1 class="question">
-    Congratulations 🎉!!!
+    Wyrazy uznania 🎉!!!
     </h1>
     <p class="score">
-      You score is ${goodAnswers}/${quiz.length}
+      Ewaluacja: ${goodAnswers}/${quiz.length}
     </p>
   `;
   quizContainer.appendChild(page);
